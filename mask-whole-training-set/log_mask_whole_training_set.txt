@@ -1,0 +1,373 @@
+python version : 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)  [GCC 7.2.0]
+torch  version : 1.0.0
+
+------------------------------------------------------- options --------------------------------------------------------
+             batch_size: 64                      crop_size: (384, 128)                      dataset: MSMT17             
+               epochs: 60                                gpu: 0                           img_size: (384, 128)          
+                lr: 0.1                        lr_strategy: resnet_style                       padding: 7               
+pretrain_path: /home/zunzhi/PycharmProjects/ide_baseline/data/resnet50-19c8e357.pth            print_freq: 100                        record_grad: True            
+                resume:                             save_path: runs                          use_cuda: True             
+   view_labeled: [2, 5, 8, 9, 10, 13]                  wd: 0.0005               
+------------------------------------------------------------------------------------------------------------------------
+
+do not use pre-trained model. train from scratch.
+
+==>>[2019-03-26 23:46:48] [Epoch=000/060] [Need: 00:00:00]
+  Iter: [000/171]   Freq 13.9   acc/r1 0.000   loss 9.918   label_loss 7.107   view_loss 2.811   [2019-03-26 23:46:53]
+  Iter: [100/171]   Freq 179.1   acc/r1 1.207   loss 9.467   label_loss 7.357   view_loss 2.109   [2019-03-26 23:47:24]
+  **Train**  acc/r1 1.270   loss 8.897   label_loss 7.064   view_loss 1.834   
+  **Test**  acc/r1 3.327   mAP 2.322   
+
+==>>[2019-03-27 00:15:03] [Epoch=001/060] [Need: 27:46:33]
+  Iter: [000/171]   Freq 35.0   acc/r1 1.562   loss 7.838   label_loss 6.393   view_loss 1.445   [2019-03-27 00:15:05]
+  Iter: [100/171]   Freq 190.7   acc/r1 1.300   loss 7.757   label_loss 6.485   view_loss 1.271   [2019-03-27 00:15:37]
+  **Train**  acc/r1 1.553   loss 7.714   label_loss 6.446   view_loss 1.268   
+  **Test**  acc/r1 2.801   mAP 2.342   
+
+==>>[2019-03-27 00:45:47] [Epoch=002/060] [Need: 28:30:41]
+  Iter: [000/171]   Freq 32.1   acc/r1 1.562   loss 7.414   label_loss 6.126   view_loss 1.288   [2019-03-27 00:45:49]
+  Iter: [100/171]   Freq 190.8   acc/r1 2.259   loss 7.373   label_loss 6.191   view_loss 1.182   [2019-03-27 00:46:21]
+  **Train**  acc/r1 2.230   loss 7.338   label_loss 6.155   view_loss 1.184   
+  **Test**  acc/r1 3.682   mAP 2.452   
+
+==>>[2019-03-27 01:22:35] [Epoch=003/060] [Need: 30:19:56]
+  Iter: [000/171]   Freq 31.4   acc/r1 3.125   loss 6.879   label_loss 5.710   view_loss 1.169   [2019-03-27 01:22:37]
+  Iter: [100/171]   Freq 191.7   acc/r1 2.754   loss 7.133   label_loss 5.924   view_loss 1.208   [2019-03-27 01:23:09]
+  **Train**  acc/r1 3.134   loss 7.105   label_loss 5.883   view_loss 1.222   
+  **Test**  acc/r1 6.391   mAP 2.672   
+
+==>>[2019-03-27 01:52:28] [Epoch=004/060] [Need: 29:19:16]
+  Iter: [000/171]   Freq 29.2   acc/r1 3.125   loss 6.808   label_loss 5.846   view_loss 0.962   [2019-03-27 01:52:30]
+  Iter: [100/171]   Freq 190.7   acc/r1 4.440   loss 6.866   label_loss 5.669   view_loss 1.197   [2019-03-27 01:53:02]
+  **Train**  acc/r1 4.605   loss 6.841   label_loss 5.642   view_loss 1.200   
+  **Test**  acc/r1 8.350   mAP 2.907   
+
+==>>[2019-03-27 02:28:10] [Epoch=005/060] [Need: 29:35:05]
+  Iter: [000/171]   Freq 27.5   acc/r1 4.688   loss 6.644   label_loss 5.535   view_loss 1.109   [2019-03-27 02:28:13]
+  Iter: [100/171]   Freq 190.9   acc/r1 5.198   loss 6.609   label_loss 5.430   view_loss 1.179   [2019-03-27 02:28:44]
+  **Train**  acc/r1 5.693   loss 6.576   label_loss 5.382   view_loss 1.194   
+  **Test**  acc/r1 8.560   mAP 2.868   
+
+==>>[2019-03-27 03:02:24] [Epoch=006/060] [Need: 29:20:25]
+  Iter: [000/171]   Freq 29.8   acc/r1 4.688   loss 6.768   label_loss 5.203   view_loss 1.564   [2019-03-27 03:02:26]
+  Iter: [100/171]   Freq 192.2   acc/r1 6.869   loss 6.307   label_loss 5.124   view_loss 1.183   [2019-03-27 03:02:58]
+  **Train**  acc/r1 6.817   loss 6.301   label_loss 5.113   view_loss 1.187   
+  **Test**  acc/r1 12.597   mAP 3.438   
+
+==>>[2019-03-27 03:37:47] [Epoch=007/060] [Need: 29:08:51]
+  Iter: [000/171]   Freq 29.4   acc/r1 7.812   loss 6.244   label_loss 4.851   view_loss 1.393   [2019-03-27 03:37:49]
+  Iter: [100/171]   Freq 190.1   acc/r1 8.230   loss 6.159   label_loss 4.937   view_loss 1.222   [2019-03-27 03:38:21]
+  **Train**  acc/r1 8.315   loss 6.145   label_loss 4.936   view_loss 1.209   
+  **Test**  acc/r1 14.149   mAP 3.590   
+
+==>>[2019-03-27 04:13:07] [Epoch=008/060] [Need: 28:51:01]
+  Iter: [000/171]   Freq 29.8   acc/r1 6.250   loss 6.341   label_loss 4.880   view_loss 1.461   [2019-03-27 04:13:09]
+  Iter: [100/171]   Freq 191.8   acc/r1 9.715   loss 5.913   label_loss 4.734   view_loss 1.179   [2019-03-27 04:13:40]
+  **Train**  acc/r1 10.033   loss 5.899   label_loss 4.702   view_loss 1.196   
+  **Test**  acc/r1 16.778   mAP 3.953   
+
+==>>[2019-03-27 04:49:46] [Epoch=009/060] [Need: 28:36:49]
+  Iter: [000/171]   Freq 29.2   acc/r1 7.812   loss 5.698   label_loss 4.520   view_loss 1.179   [2019-03-27 04:49:48]
+  Iter: [100/171]   Freq 191.6   acc/r1 12.732   loss 5.629   label_loss 4.435   view_loss 1.194   [2019-03-27 04:50:20]
+  **Train**  acc/r1 12.929   loss 5.638   label_loss 4.435   view_loss 1.203   
+  **Test**  acc/r1 20.381   mAP 4.407   
+
+==>>[2019-03-27 05:27:16] [Epoch=010/060] [Need: 28:22:21]
+  Iter: [000/171]   Freq 29.8   acc/r1 10.938   loss 5.332   label_loss 4.290   view_loss 1.041   [2019-03-27 05:27:18]
+  Iter: [100/171]   Freq 191.4   acc/r1 15.114   loss 5.384   label_loss 4.190   view_loss 1.193   [2019-03-27 05:27:50]
+  **Train**  acc/r1 15.150   loss 5.392   label_loss 4.201   view_loss 1.191   
+  **Test**  acc/r1 24.274   mAP 4.789   
+
+==>>[2019-03-27 06:01:33] [Epoch=011/060] [Need: 27:49:21]
+  Iter: [000/171]   Freq 29.6   acc/r1 15.625   loss 5.428   label_loss 4.288   view_loss 1.140   [2019-03-27 06:01:35]
+  Iter: [100/171]   Freq 192.3   acc/r1 18.688   loss 5.077   label_loss 3.904   view_loss 1.173   [2019-03-27 06:02:07]
+  **Train**  acc/r1 19.189   loss 5.108   label_loss 3.924   view_loss 1.183   
+  **Test**  acc/r1 26.469   mAP 5.151   
+
+==>>[2019-03-27 06:40:37] [Epoch=012/060] [Need: 27:35:14]
+  Iter: [000/171]   Freq 24.7   acc/r1 21.875   loss 5.104   label_loss 3.818   view_loss 1.286   [2019-03-27 06:40:39]
+  Iter: [100/171]   Freq 189.6   acc/r1 23.314   loss 4.859   label_loss 3.647   view_loss 1.212   [2019-03-27 06:41:11]
+  **Train**  acc/r1 23.383   loss 4.869   label_loss 3.652   view_loss 1.217   
+  **Test**  acc/r1 31.243   mAP 6.045   
+
+==>>[2019-03-27 07:18:25] [Epoch=013/060] [Need: 27:12:46]
+  Iter: [000/171]   Freq 34.1   acc/r1 21.875   loss 4.716   label_loss 3.399   view_loss 1.317   [2019-03-27 07:18:27]
+  Iter: [100/171]   Freq 193.1   acc/r1 27.367   loss 4.543   label_loss 3.351   view_loss 1.192   [2019-03-27 07:18:59]
+  **Train**  acc/r1 27.120   loss 4.620   label_loss 3.397   view_loss 1.223   
+  **Test**  acc/r1 31.440   mAP 6.067   
+
+==>>[2019-03-27 07:55:55] [Epoch=014/060] [Need: 26:47:05]
+  Iter: [000/171]   Freq 25.1   acc/r1 32.812   loss 4.040   label_loss 2.826   view_loss 1.214   [2019-03-27 07:55:57]
+  Iter: [100/171]   Freq 189.5   acc/r1 31.049   loss 4.378   label_loss 3.140   view_loss 1.238   [2019-03-27 07:56:29]
+  **Train**  acc/r1 30.263   loss 4.473   label_loss 3.199   view_loss 1.275   
+  **Test**  acc/r1 34.845   mAP 6.624   
+
+==>>[2019-03-27 08:32:32] [Epoch=015/060] [Need: 26:17:12]
+  Iter: [000/171]   Freq 32.8   acc/r1 32.812   loss 4.406   label_loss 3.118   view_loss 1.288   [2019-03-27 08:32:34]
+  Iter: [100/171]   Freq 192.5   acc/r1 34.282   loss 4.215   label_loss 2.921   view_loss 1.294   [2019-03-27 08:33:06]
+  **Train**  acc/r1 34.878   loss 4.200   label_loss 2.917   view_loss 1.282   
+  **Test**  acc/r1 36.700   mAP 6.990   
+
+==>>[2019-03-27 09:06:55] [Epoch=016/060] [Need: 25:40:19]
+  Iter: [000/171]   Freq 33.5   acc/r1 45.312   loss 3.678   label_loss 2.295   view_loss 1.383   [2019-03-27 09:06:57]
+  Iter: [100/171]   Freq 192.6   acc/r1 39.697   loss 3.855   label_loss 2.616   view_loss 1.239   [2019-03-27 09:07:29]
+  **Train**  acc/r1 39.766   loss 3.883   label_loss 2.616   view_loss 1.267   
+  **Test**  acc/r1 38.830   mAP 7.697   
+
+==>>[2019-03-27 09:32:53] [Epoch=017/060] [Need: 24:42:27]
+  Iter: [000/171]   Freq 35.2   acc/r1 39.062   loss 3.905   label_loss 2.382   view_loss 1.523   [2019-03-27 09:32:55]
+  Iter: [100/171]   Freq 194.1   acc/r1 43.054   loss 3.738   label_loss 2.445   view_loss 1.293   [2019-03-27 09:33:27]
+  **Train**  acc/r1 42.480   loss 3.778   label_loss 2.482   view_loss 1.296   
+  **Test**  acc/r1 40.473   mAP 7.695   
+
+==>>[2019-03-27 09:57:47] [Epoch=018/060] [Need: 23:45:37]
+  Iter: [000/171]   Freq 33.9   acc/r1 46.875   loss 3.272   label_loss 2.081   view_loss 1.191   [2019-03-27 09:57:49]
+  Iter: [100/171]   Freq 193.4   acc/r1 47.432   loss 3.529   label_loss 2.201   view_loss 1.328   [2019-03-27 09:58:20]
+  **Train**  acc/r1 46.564   loss 3.579   label_loss 2.256   view_loss 1.323   
+  **Test**  acc/r1 36.713   mAP 6.793   
+
+==>>[2019-03-27 10:25:49] [Epoch=019/060] [Need: 22:58:56]
+  Iter: [000/171]   Freq 27.9   acc/r1 56.250   loss 3.177   label_loss 1.711   view_loss 1.466   [2019-03-27 10:25:52]
+  Iter: [100/171]   Freq 191.1   acc/r1 50.511   loss 3.423   label_loss 2.085   view_loss 1.338   [2019-03-27 10:26:23]
+  **Train**  acc/r1 50.384   loss 3.441   label_loss 2.099   view_loss 1.342   
+  **Test**  acc/r1 44.287   mAP 8.399   
+
+==>>[2019-03-27 10:50:52] [Epoch=020/060] [Need: 22:08:08]
+  Iter: [000/171]   Freq 28.2   acc/r1 54.688   loss 3.074   label_loss 1.751   view_loss 1.323   [2019-03-27 10:50:54]
+  Iter: [100/171]   Freq 191.5   acc/r1 56.993   loss 3.127   label_loss 1.774   view_loss 1.353   [2019-03-27 10:51:26]
+  **Train**  acc/r1 55.382   loss 3.225   label_loss 1.857   view_loss 1.369   
+  **Test**  acc/r1 44.550   mAP 8.766   
+
+==>>[2019-03-27 11:17:07] [Epoch=021/060] [Need: 21:22:01]
+  Iter: [000/171]   Freq 34.2   acc/r1 59.375   loss 2.985   label_loss 1.559   view_loss 1.427   [2019-03-27 11:17:09]
+  Iter: [100/171]   Freq 193.6   acc/r1 58.400   loss 3.057   label_loss 1.703   view_loss 1.354   [2019-03-27 11:17:41]
+  **Train**  acc/r1 57.283   loss 3.125   label_loss 1.743   view_loss 1.382   
+  **Test**  acc/r1 44.878   mAP 8.800   
+
+==>>[2019-03-27 11:41:13] [Epoch=022/060] [Need: 20:33:59]
+  Iter: [000/171]   Freq 29.0   acc/r1 76.562   loss 2.550   label_loss 1.222   view_loss 1.327   [2019-03-27 11:41:15]
+  Iter: [100/171]   Freq 190.7   acc/r1 61.494   loss 2.895   label_loss 1.533   view_loss 1.362   [2019-03-27 11:41:47]
+  **Train**  acc/r1 60.289   loss 2.970   label_loss 1.597   view_loss 1.373   
+  **Test**  acc/r1 45.641   mAP 8.928   
+
+==>>[2019-03-27 12:09:41] [Epoch=023/060] [Need: 19:55:03]
+  Iter: [000/171]   Freq 38.5   acc/r1 75.000   loss 2.439   label_loss 1.089   view_loss 1.349   [2019-03-27 12:09:42]
+  Iter: [100/171]   Freq 193.8   acc/r1 62.856   loss 2.866   label_loss 1.458   view_loss 1.408   [2019-03-27 12:10:14]
+  **Train**  acc/r1 62.975   loss 2.863   label_loss 1.463   view_loss 1.400   
+  **Test**  acc/r1 47.982   mAP 9.207   
+
+==>>[2019-03-27 12:38:31] [Epoch=024/060] [Need: 19:17:34]
+  Iter: [000/171]   Freq 28.9   acc/r1 71.875   loss 2.438   label_loss 1.049   view_loss 1.389   [2019-03-27 12:38:33]
+  Iter: [100/171]   Freq 191.4   acc/r1 67.373   loss 2.655   label_loss 1.263   view_loss 1.392   [2019-03-27 12:39:05]
+  **Train**  acc/r1 66.548   loss 2.693   label_loss 1.300   view_loss 1.394   
+  **Test**  acc/r1 48.100   mAP 9.691   
+
+==>>[2019-03-27 13:05:30] [Epoch=025/060] [Need: 18:38:11]
+  Iter: [000/171]   Freq 36.6   acc/r1 79.688   loss 2.128   label_loss 0.876   view_loss 1.252   [2019-03-27 13:05:32]
+  Iter: [100/171]   Freq 193.4   acc/r1 68.007   loss 2.626   label_loss 1.235   view_loss 1.391   [2019-03-27 13:06:04]
+  **Train**  acc/r1 67.644   loss 2.669   label_loss 1.272   view_loss 1.398   
+  **Test**  acc/r1 49.586   mAP 9.749   
+
+==>>[2019-03-27 13:34:11] [Epoch=026/060] [Need: 18:01:57]
+  Iter: [000/171]   Freq 35.3   acc/r1 68.750   loss 2.428   label_loss 1.053   view_loss 1.375   [2019-03-27 13:34:12]
+  Iter: [100/171]   Freq 192.9   acc/r1 70.421   loss 2.525   label_loss 1.129   view_loss 1.396   [2019-03-27 13:34:44]
+  **Train**  acc/r1 69.910   loss 2.538   label_loss 1.140   view_loss 1.398   
+  **Test**  acc/r1 49.744   mAP 9.810   
+
+==>>[2019-03-27 14:02:39] [Epoch=027/060] [Need: 17:26:02]
+  Iter: [000/171]   Freq 30.6   acc/r1 82.812   loss 2.017   label_loss 0.689   view_loss 1.328   [2019-03-27 14:02:41]
+  Iter: [100/171]   Freq 191.2   acc/r1 72.540   loss 2.448   label_loss 1.062   view_loss 1.385   [2019-03-27 14:03:13]
+  **Train**  acc/r1 71.573   loss 2.493   label_loss 1.094   view_loss 1.399   
+  **Test**  acc/r1 50.848   mAP 10.014   
+
+==>>[2019-03-27 14:30:42] [Epoch=028/060] [Need: 16:50:10]
+  Iter: [000/171]   Freq 37.8   acc/r1 75.000   loss 2.307   label_loss 0.950   view_loss 1.357   [2019-03-27 14:30:44]
+  Iter: [100/171]   Freq 194.5   acc/r1 74.350   loss 2.368   label_loss 0.958   view_loss 1.410   [2019-03-27 14:31:15]
+  **Train**  acc/r1 73.328   loss 2.416   label_loss 1.008   view_loss 1.408   
+  **Test**  acc/r1 49.546   mAP 9.768   
+
+==>>[2019-03-27 14:59:10] [Epoch=029/060] [Need: 16:15:17]
+  Iter: [000/171]   Freq 33.7   acc/r1 85.938   loss 2.167   label_loss 0.760   view_loss 1.407   [2019-03-27 14:59:12]
+  Iter: [100/171]   Freq 193.0   acc/r1 74.752   loss 2.380   label_loss 0.972   view_loss 1.408   [2019-03-27 14:59:44]
+  **Train**  acc/r1 74.525   loss 2.390   label_loss 0.974   view_loss 1.416   
+  **Test**  acc/r1 51.519   mAP 10.076   
+
+==>>[2019-03-27 15:30:08] [Epoch=030/060] [Need: 15:43:19]
+  Iter: [000/171]   Freq 34.3   acc/r1 79.688   loss 2.150   label_loss 0.616   view_loss 1.534   [2019-03-27 15:30:10]
+  Iter: [100/171]   Freq 191.4   acc/r1 88.660   loss 1.849   label_loss 0.445   view_loss 1.404   [2019-03-27 15:30:42]
+  **Train**  acc/r1 90.323   loss 1.793   label_loss 0.388   view_loss 1.405   
+  **Test**  acc/r1 54.556   mAP 10.947   
+
+==>>[2019-03-27 15:57:47] [Epoch=031/060] [Need: 15:08:20]
+  Iter: [000/171]   Freq 36.2   acc/r1 96.875   loss 1.522   label_loss 0.140   view_loss 1.382   [2019-03-27 15:57:49]
+  Iter: [100/171]   Freq 194.1   acc/r1 95.467   loss 1.634   label_loss 0.205   view_loss 1.429   [2019-03-27 15:58:20]
+  **Train**  acc/r1 95.175   loss 1.627   label_loss 0.209   view_loss 1.418   
+  **Test**  acc/r1 54.359   mAP 10.891   
+
+==>>[2019-03-27 16:27:42] [Epoch=032/060] [Need: 14:35:47]
+  Iter: [000/171]   Freq 34.2   acc/r1 95.312   loss 1.562   label_loss 0.173   view_loss 1.389   [2019-03-27 16:27:44]
+  Iter: [100/171]   Freq 192.5   acc/r1 96.040   loss 1.562   label_loss 0.173   view_loss 1.389   [2019-03-27 16:28:16]
+  **Train**  acc/r1 96.053   loss 1.571   label_loss 0.171   view_loss 1.400   
+  **Test**  acc/r1 54.070   mAP 10.838   
+
+==>>[2019-03-27 16:55:18] [Epoch=033/060] [Need: 14:01:29]
+  Iter: [000/171]   Freq 34.9   acc/r1 93.750   loss 1.724   label_loss 0.182   view_loss 1.543   [2019-03-27 16:55:20]
+  Iter: [100/171]   Freq 191.1   acc/r1 96.442   loss 1.550   label_loss 0.156   view_loss 1.394   [2019-03-27 16:55:52]
+  **Train**  acc/r1 96.345   loss 1.533   label_loss 0.158   view_loss 1.375   
+  **Test**  acc/r1 54.057   mAP 10.887   
+
+==>>[2019-03-27 17:23:31] [Epoch=034/060] [Need: 13:28:04]
+  Iter: [000/171]   Freq 37.5   acc/r1 95.312   loss 1.428   label_loss 0.180   view_loss 1.248   [2019-03-27 17:23:33]
+  Iter: [100/171]   Freq 194.6   acc/r1 96.999   loss 1.563   label_loss 0.143   view_loss 1.419   [2019-03-27 17:24:04]
+  **Train**  acc/r1 96.912   loss 1.567   label_loss 0.143   view_loss 1.424   
+  **Test**  acc/r1 54.898   mAP 11.056   
+
+==>>[2019-03-27 17:51:24] [Epoch=035/060] [Need: 12:54:43]
+  Iter: [000/171]   Freq 33.4   acc/r1 96.875   loss 1.492   label_loss 0.110   view_loss 1.383   [2019-03-27 17:51:26]
+  Iter: [100/171]   Freq 192.9   acc/r1 97.788   loss 1.532   label_loss 0.116   view_loss 1.415   [2019-03-27 17:51:58]
+  **Train**  acc/r1 97.725   loss 1.542   label_loss 0.119   view_loss 1.423   
+  **Test**  acc/r1 54.845   mAP 10.954   
+
+==>>[2019-03-27 18:20:30] [Epoch=036/060] [Need: 12:22:28]
+  Iter: [000/171]   Freq 28.8   acc/r1 98.438   loss 1.447   label_loss 0.127   view_loss 1.320   [2019-03-27 18:20:33]
+  Iter: [100/171]   Freq 191.4   acc/r1 97.834   loss 1.548   label_loss 0.112   view_loss 1.436   [2019-03-27 18:21:04]
+  **Train**  acc/r1 97.825   loss 1.543   label_loss 0.114   view_loss 1.429   
+  **Test**  acc/r1 54.622   mAP 10.905   
+
+==>>[2019-03-27 18:49:52] [Epoch=037/060] [Need: 11:50:33]
+  Iter: [000/171]   Freq 26.8   acc/r1 100.000   loss 1.630   label_loss 0.056   view_loss 1.574   [2019-03-27 18:49:54]
+  Iter: [100/171]   Freq 190.0   acc/r1 98.391   loss 1.521   label_loss 0.093   view_loss 1.428   [2019-03-27 18:50:26]
+  **Train**  acc/r1 98.227   loss 1.513   label_loss 0.098   view_loss 1.415   
+  **Test**  acc/r1 54.490   mAP 11.012   
+
+==>>[2019-03-27 19:19:06] [Epoch=038/060] [Need: 11:18:41]
+  Iter: [000/171]   Freq 30.6   acc/r1 100.000   loss 1.557   label_loss 0.045   view_loss 1.512   [2019-03-27 19:19:08]
+  Iter: [100/171]   Freq 190.6   acc/r1 98.731   loss 1.515   label_loss 0.082   view_loss 1.433   [2019-03-27 19:19:39]
+  **Train**  acc/r1 98.511   loss 1.511   label_loss 0.088   view_loss 1.422   
+  **Test**  acc/r1 55.279   mAP 11.017   
+
+==>>[2019-03-27 19:47:30] [Epoch=039/060] [Need: 10:46:32]
+  Iter: [000/171]   Freq 36.5   acc/r1 100.000   loss 1.437   label_loss 0.038   view_loss 1.399   [2019-03-27 19:47:32]
+  Iter: [100/171]   Freq 192.7   acc/r1 98.623   loss 1.477   label_loss 0.084   view_loss 1.393   [2019-03-27 19:48:04]
+  **Train**  acc/r1 98.447   loss 1.486   label_loss 0.088   view_loss 1.398   
+  **Test**  acc/r1 54.517   mAP 10.990   
+
+==>>[2019-03-27 20:15:54] [Epoch=040/060] [Need: 10:14:33]
+  Iter: [000/171]   Freq 32.0   acc/r1 96.875   loss 1.602   label_loss 0.141   view_loss 1.460   [2019-03-27 20:15:56]
+  Iter: [100/171]   Freq 192.5   acc/r1 98.700   loss 1.504   label_loss 0.087   view_loss 1.417   [2019-03-27 20:16:28]
+  **Train**  acc/r1 98.712   loss 1.504   label_loss 0.088   view_loss 1.416   
+  **Test**  acc/r1 55.556   mAP 11.212   
+
+==>>[2019-03-27 20:45:46] [Epoch=041/060] [Need: 09:43:25]
+  Iter: [000/171]   Freq 37.3   acc/r1 100.000   loss 1.424   label_loss 0.068   view_loss 1.356   [2019-03-27 20:45:48]
+  Iter: [100/171]   Freq 192.5   acc/r1 98.824   loss 1.508   label_loss 0.081   view_loss 1.427   [2019-03-27 20:46:20]
+  **Train**  acc/r1 98.666   loss 1.510   label_loss 0.087   view_loss 1.423   
+  **Test**  acc/r1 55.411   mAP 11.074   
+
+==>>[2019-03-27 21:13:06] [Epoch=042/060] [Need: 09:11:16]
+  Iter: [000/171]   Freq 39.4   acc/r1 96.875   loss 1.624   label_loss 0.110   view_loss 1.514   [2019-03-27 21:13:07]
+  Iter: [100/171]   Freq 194.1   acc/r1 98.670   loss 1.517   label_loss 0.085   view_loss 1.433   [2019-03-27 21:13:39]
+  **Train**  acc/r1 98.794   loss 1.515   label_loss 0.081   view_loss 1.434   
+  **Test**  acc/r1 55.726   mAP 11.119   
+
+==>>[2019-03-27 21:40:56] [Epoch=043/060] [Need: 08:39:32]
+  Iter: [000/171]   Freq 39.1   acc/r1 98.438   loss 1.489   label_loss 0.100   view_loss 1.389   [2019-03-27 21:40:57]
+  Iter: [100/171]   Freq 194.8   acc/r1 98.917   loss 1.480   label_loss 0.071   view_loss 1.410   [2019-03-27 21:41:29]
+  **Train**  acc/r1 98.730   loss 1.488   label_loss 0.075   view_loss 1.413   
+  **Test**  acc/r1 55.056   mAP 11.120   
+
+==>>[2019-03-27 22:08:24] [Epoch=044/060] [Need: 08:07:51]
+  Iter: [000/171]   Freq 37.4   acc/r1 100.000   loss 1.293   label_loss 0.033   view_loss 1.259   [2019-03-27 22:08:25]
+  Iter: [100/171]   Freq 194.2   acc/r1 99.025   loss 1.495   label_loss 0.067   view_loss 1.428   [2019-03-27 22:08:57]
+  **Train**  acc/r1 98.949   loss 1.503   label_loss 0.073   view_loss 1.430   
+  **Test**  acc/r1 54.938   mAP 11.046   
+
+==>>[2019-03-27 22:36:52] [Epoch=045/060] [Need: 07:36:41]
+  Iter: [000/171]   Freq 34.8   acc/r1 100.000   loss 1.398   label_loss 0.033   view_loss 1.366   [2019-03-27 22:36:54]
+  Iter: [100/171]   Freq 193.2   acc/r1 99.196   loss 1.484   label_loss 0.061   view_loss 1.423   [2019-03-27 22:37:25]
+  **Train**  acc/r1 99.278   loss 1.489   label_loss 0.061   view_loss 1.428   
+  **Test**  acc/r1 55.279   mAP 11.151   
+
+==>>[2019-03-27 23:04:02] [Epoch=046/060] [Need: 07:05:14]
+  Iter: [000/171]   Freq 30.8   acc/r1 98.438   loss 1.597   label_loss 0.133   view_loss 1.465   [2019-03-27 23:04:05]
+  Iter: [100/171]   Freq 189.5   acc/r1 99.505   loss 1.483   label_loss 0.056   view_loss 1.427   [2019-03-27 23:04:37]
+  **Train**  acc/r1 99.552   loss 1.480   label_loss 0.056   view_loss 1.424   
+  **Test**  acc/r1 55.464   mAP 11.153   
+
+==>>[2019-03-27 23:32:47] [Epoch=047/060] [Need: 06:34:25]
+  Iter: [000/171]   Freq 38.5   acc/r1 98.438   loss 1.443   label_loss 0.038   view_loss 1.405   [2019-03-27 23:32:49]
+  Iter: [100/171]   Freq 194.7   acc/r1 99.582   loss 1.474   label_loss 0.054   view_loss 1.420   [2019-03-27 23:33:21]
+  **Train**  acc/r1 99.561   loss 1.478   label_loss 0.054   view_loss 1.423   
+  **Test**  acc/r1 55.306   mAP 11.173   
+
+==>>[2019-03-28 00:02:04] [Epoch=048/060] [Need: 06:03:49]
+  Iter: [000/171]   Freq 32.4   acc/r1 100.000   loss 1.494   label_loss 0.037   view_loss 1.457   [2019-03-28 00:02:06]
+  Iter: [100/171]   Freq 192.8   acc/r1 99.613   loss 1.476   label_loss 0.053   view_loss 1.423   [2019-03-28 00:02:38]
+  **Train**  acc/r1 99.616   loss 1.476   label_loss 0.054   view_loss 1.422   
+  **Test**  acc/r1 55.332   mAP 11.169   
+
+==>>[2019-03-28 00:30:27] [Epoch=049/060] [Need: 05:33:03]
+  Iter: [000/171]   Freq 34.2   acc/r1 100.000   loss 1.486   label_loss 0.058   view_loss 1.428   [2019-03-28 00:30:29]
+  Iter: [100/171]   Freq 191.3   acc/r1 99.520   loss 1.489   label_loss 0.052   view_loss 1.437   [2019-03-28 00:31:00]
+  **Train**  acc/r1 99.534   loss 1.477   label_loss 0.052   view_loss 1.425   
+  **Test**  acc/r1 55.608   mAP 11.233   
+
+==>>[2019-03-28 00:58:12] [Epoch=050/060] [Need: 05:02:16]
+  Iter: [000/171]   Freq 31.3   acc/r1 100.000   loss 1.402   label_loss 0.024   view_loss 1.378   [2019-03-28 00:58:14]
+  Iter: [100/171]   Freq 191.6   acc/r1 99.737   loss 1.480   label_loss 0.047   view_loss 1.432   [2019-03-28 00:58:46]
+  **Train**  acc/r1 99.625   loss 1.478   label_loss 0.051   view_loss 1.427   
+  **Test**  acc/r1 55.464   mAP 11.193   
+
+==>>[2019-03-28 01:26:19] [Epoch=051/060] [Need: 04:31:40]
+  Iter: [000/171]   Freq 31.1   acc/r1 98.438   loss 1.337   label_loss 0.068   view_loss 1.269   [2019-03-28 01:26:21]
+  Iter: [100/171]   Freq 192.7   acc/r1 99.660   loss 1.480   label_loss 0.053   view_loss 1.427   [2019-03-28 01:26:52]
+  **Train**  acc/r1 99.662   loss 1.477   label_loss 0.053   view_loss 1.424   
+  **Test**  acc/r1 55.529   mAP 11.172   
+
+==>>[2019-03-28 01:54:01] [Epoch=052/060] [Need: 04:01:06]
+  Iter: [000/171]   Freq 36.7   acc/r1 100.000   loss 1.429   label_loss 0.051   view_loss 1.378   [2019-03-28 01:54:03]
+  Iter: [100/171]   Freq 192.9   acc/r1 99.505   loss 1.483   label_loss 0.054   view_loss 1.429   [2019-03-28 01:54:35]
+  **Train**  acc/r1 99.452   loss 1.481   label_loss 0.055   view_loss 1.426   
+  **Test**  acc/r1 55.516   mAP 11.189   
+
+==>>[2019-03-28 02:21:31] [Epoch=053/060] [Need: 03:30:37]
+  Iter: [000/171]   Freq 34.5   acc/r1 100.000   loss 1.296   label_loss 0.030   view_loss 1.266   [2019-03-28 02:21:33]
+  Iter: [100/171]   Freq 192.8   acc/r1 99.613   loss 1.483   label_loss 0.053   view_loss 1.430   [2019-03-28 02:22:04]
+  **Train**  acc/r1 99.644   loss 1.478   label_loss 0.053   view_loss 1.425   
+  **Test**  acc/r1 55.411   mAP 11.133   
+
+==>>[2019-03-28 02:49:37] [Epoch=054/060] [Need: 03:00:18]
+  Iter: [000/171]   Freq 33.7   acc/r1 100.000   loss 1.638   label_loss 0.041   view_loss 1.597   [2019-03-28 02:49:39]
+  Iter: [100/171]   Freq 191.8   acc/r1 99.551   loss 1.480   label_loss 0.051   view_loss 1.429   [2019-03-28 02:50:11]
+  **Train**  acc/r1 99.516   loss 1.481   label_loss 0.054   view_loss 1.426   
+  **Test**  acc/r1 55.490   mAP 11.186   
+
+==>>[2019-03-28 03:17:23] [Epoch=055/060] [Need: 02:30:03]
+  Iter: [000/171]   Freq 30.2   acc/r1 100.000   loss 1.513   label_loss 0.042   view_loss 1.471   [2019-03-28 03:17:25]
+  Iter: [100/171]   Freq 190.6   acc/r1 99.505   loss 1.480   label_loss 0.057   view_loss 1.422   [2019-03-28 03:17:57]
+  **Train**  acc/r1 99.561   loss 1.482   label_loss 0.056   view_loss 1.426   
+  **Test**  acc/r1 55.687   mAP 11.191   
+
+==>>[2019-03-28 03:46:47] [Epoch=056/060] [Need: 01:59:59]
+  Iter: [000/171]   Freq 32.4   acc/r1 98.438   loss 1.545   label_loss 0.101   view_loss 1.443   [2019-03-28 03:46:49]
+  Iter: [100/171]   Freq 191.3   acc/r1 99.536   loss 1.480   label_loss 0.057   view_loss 1.423   [2019-03-28 03:47:20]
+  **Train**  acc/r1 99.552   loss 1.482   label_loss 0.056   view_loss 1.427   
+  **Test**  acc/r1 55.963   mAP 11.214   
+
+==>>[2019-03-28 04:11:38] [Epoch=057/060] [Need: 01:29:43]
+  Iter: [000/171]   Freq 31.2   acc/r1 100.000   loss 1.670   label_loss 0.060   view_loss 1.610   [2019-03-28 04:11:40]
+  Iter: [100/171]   Freq 192.4   acc/r1 99.691   loss 1.477   label_loss 0.052   view_loss 1.425   [2019-03-28 04:12:11]
+  **Train**  acc/r1 99.607   loss 1.481   label_loss 0.054   view_loss 1.428   
+  **Test**  acc/r1 55.740   mAP 11.176   
+
+==>>[2019-03-28 04:39:49] [Epoch=058/060] [Need: 00:59:45]
+  Iter: [000/171]   Freq 36.7   acc/r1 100.000   loss 1.386   label_loss 0.038   view_loss 1.349   [2019-03-28 04:39:51]
+  Iter: [100/171]   Freq 193.1   acc/r1 99.660   loss 1.481   label_loss 0.054   view_loss 1.427   [2019-03-28 04:40:23]
+  **Train**  acc/r1 99.625   loss 1.481   label_loss 0.054   view_loss 1.427   
+  **Test**  acc/r1 55.595   mAP 11.193   
+
+==>>[2019-03-28 05:07:22] [Epoch=059/060] [Need: 00:29:50]
+  Iter: [000/171]   Freq 32.1   acc/r1 100.000   loss 1.427   label_loss 0.027   view_loss 1.400   [2019-03-28 05:07:24]
+  Iter: [100/171]   Freq 192.9   acc/r1 99.675   loss 1.480   label_loss 0.053   view_loss 1.426   [2019-03-28 05:07:56]
+  **Train**  acc/r1 99.625   loss 1.479   label_loss 0.054   view_loss 1.425   
+  **Test**  acc/r1 55.516   mAP 11.151   
